@@ -1,0 +1,16 @@
+<h1>How to install ReviveLinux!</hi>
+
+	<h2>Step 1, Download the Arch Linux 32 ISO from <a href="http://revivelinux.nexalinux.xyz/revivelinux/install.iso">This Link</a> </h2>
+	<h2> Step 2. After the iso has downloaded, use your favorite flashing software (Rufus, Ventoy, balenaEther, dd) to flash the installer to a USB stick.</h2>
+	<h2>Step 3. After flashing the ISO to either a CD or USB, plug it into the olc computer and boot off of the CD/USB.</h2>
+	<h2>Step 4. After booting, run lsblk to list the hard drive. (it should be sda or sdb)</h2>
+	<h2>Step 5. Use cfdisk to delete any existing partitions off the hard drive. After deleting all of them, make a new one. After making the new one, write the changes and then exit cfdisk.</h2>
+	<h2>Step 6.After exiting cfdisk, run mkfs.ext4 /dev/sdx1 (replace x with your drive letter)</h2>
+	<h2>Step 7. Now mount the hard drive by running mount /dev/sdx1 /mnt (replace x with your hard drive letter)</h2>
+	<h2>Step 8. Now run wget http://revivelinux.nexalinux.xyz/install.sh To download the installer.</h2> 
+	<h2>Step 9. Run chmod +x install.sh to make the installer executable.</h2>
+	<h2>Step 10. Run ./install.sh to begin the installation.</h2>
+	<h2>Step 11. After the install inished, run umount -a to unmount the hard drive.</h2>
+	<h2>Step 12. Run reboot to finish the installation.</h2>
+	<h2>If you have done everything right, you should see GRUB and the option to start Revive Linux.</h2>
+	<h2> The username is revivelinux and the password is revivelinux</h2>
